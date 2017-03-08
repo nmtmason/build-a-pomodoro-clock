@@ -1,0 +1,55 @@
+@import 'base';
+
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: $spacer;
+}
+
+h1 {
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $gray-normal;
+  border-radius: 50%;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.progress {
+  position: absolute;
+  background-color: $gray-lighter;
+  border-radius: 50%;
+}
+
+.complete {
+  background-color: $green;
+}
+
+.controls {
+  display: flex;
+  z-index: 1;
+
+  & > * {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    justify-content: center;
+    min-height: 100vh;
+  }
+}
