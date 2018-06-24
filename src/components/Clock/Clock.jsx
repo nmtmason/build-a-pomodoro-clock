@@ -61,5 +61,3 @@ export const Clock = ({ seconds, maxSeconds, color }) => (
     <Timer>{timeFromValue(maxSeconds - seconds)}</Timer>
   </div>
 );
-
-console.log(Math.PI * 180 * 2);
