@@ -1,5 +1,6 @@
 {
   "name": "build-a-pomodoro-clock",
+  "homepage": "https://nmtmason.github.io/build-a-pomodoro-clock",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
